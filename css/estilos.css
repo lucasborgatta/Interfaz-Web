@@ -60,6 +60,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: space-between;
   gap: 40px;
 
   .contact-titles {
@@ -77,8 +78,7 @@ header {
       font-weight: 700;
     }
 
-    label::after {
-      content: " *";
+    .required {
       color: red;
     }
 
