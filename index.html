@@ -81,20 +81,20 @@
           <span class="h7">¿Querés que nos contactemos con vos?</span>
           <h5>Envianos tu consulta >></h5>
         </div>
-        <div class="form">
+        <form action="php/codigo.php" method="post" enctype="multipart/form-data" class="form">
           <label for="nombre">Nombre<span class="required"> *</span></label>
-          <input type="text" id="nombre" name="nombre" required />
+          <input type="text" id="nombre" name="nombre" class="text-field" required />
 
           <label for="email">Email<span class="required"> *</span></label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" class="text-field" required />
 
           <label for="mensaje">Mensaje</label>
           <textarea id="mensaje"></textarea>
           <div class="form-buttons">
             <button>Enviar consulta</button>
-            <button>Borrar</button>
+            <input type="reset" value="Borrar" class="button" />
           </div>
-        </div>
+        </form>
       </section>
     </main>
     <footer>
@@ -103,14 +103,18 @@
           <p>redes</p>
           <p>wwwapas</p>
         </div>
-        <img src="assets/instagram-icon.png" alt="Instagram icon" />
+        <a title="instagram educacion it" href="https://www.instagram.com/educacionit/" target="_blank">
+          <img src="assets/instagram-icon.png" alt="Instagram icon"
+        /></a>
         <img src="assets/dribbble-icon.png" alt="Dribbble icon" />
         <img src="assets/linkedin-icon.png" alt="Linkedin icon" />
-        <img src="assets/facebook-icon.png" alt="Facebook" />
+        <a title="facebook educacion" href="https://www.facebook.com/EducacionIT/" target="_blank">
+          <img src="assets/facebook-icon.png" alt="Facebook" />
+        </a>
       </section>
       <div class="footer">
         <div class="footer-text">
-          <p class="footer-title">wwwapas</p>
+          <a class="footer-title" href="index.html"> wwwapas</a>
           <p>wwwapas_sm@mail.com</p>
         </div>
       </div>
